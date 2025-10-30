@@ -1,0 +1,96 @@
+/* glassmorphism.module.css
+   
+   Ejemplo de uso en React:
+   
+   import styles from "./glassmorphism.module.css";
+   
+   export function PanelSolaris() {
+   return (
+   <div className={`${styles.glass} ${styles.solaris}`
+   style={{ borderRadius: 30 }}>
+      {/* Tu contenido */}
+   </div>
+   );
+   }
+
+*/
+
+/* ====== Base ====== */
+.glass {
+  position: relative;
+  isolation: isolate;
+  /* Variables editables por el consumidor */
+  --glass-radius: 22px;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+  --glass-bg: rgba(254, 252, 232, 0.1);
+  --glass-blur: blur(14px);
+  --glass-saturate: saturate(130%);
+  --glass-shadow: 2px 6px 28px 0 rgba(113, 63, 18, 0.2);
+  --glass-inset-1: inset 0 0 0 rgba(255, 255, 255, 0);
+  --glass-inset-2: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.3);
+}
+
+.glass {
+  border-radius: var(--glass-radius);
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-inset-1), var(--glass-inset-2);
+  backdrop-filter: var(--glass-blur) var(--glass-saturate);
+  -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+}
+
+/* Reflejos (no consumen espacio, no bloquean clics) */
+.glass::before,
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: 1;
+}
+.glass::before {
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 50%);
+}
+.glass::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* ====== Variantes ====== */
+
+/* Amethyst Haze (según tu snippet) */
+.amethyst {
+  --glass-blur: blur(41px);
+  --glass-saturate: saturate(17%);
+  --glass-bg: rgba(254, 252, 232, 0.03);
+  --glass-radius: 50px;
+  --glass-border: 10px solid rgba(255, 255, 255, 0.2);
+  --glass-shadow: 2px 6px 28px 0 rgba(59, 7, 100, 0.3);
+  --glass-inset-1: inset 0 0 0 rgba(216, 180, 254, 0);
+  --glass-inset-2: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.25);
+}
+
+/* Solaris Gold (según tu snippet) */
+.solaris {
+  --glass-blur: blur(14px);
+  --glass-saturate: saturate(130%);
+  --glass-bg: rgba(254, 252, 232, 0.1);
+  --glass-radius: 22px;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+  --glass-shadow: 2px 6px 28px 0 rgba(113, 63, 18, 0.2);
+  --glass-inset-1: inset 0 0 0 rgba(255, 255, 255, 0);
+  --glass-inset-2: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Cosmic Latte (según tu snippet) */
+.cosmic {
+  --glass-blur: blur(8px);
+  --glass-saturate: saturate(100%);
+  --glass-bg: rgba(253, 244, 227, 0.08);
+  --glass-radius: 24px;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+  --glass-shadow: 4px 4px 20px 0 rgba(120, 53, 15, 0.1);
+  --glass-inset-1: inset 0 0 150px rgba(245, 158, 11, 0.05);
+  --glass-inset-2: inset 0px 0px 4px 2px rgba(255, 255, 255, 0.15);
+}
+

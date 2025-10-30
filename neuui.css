@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Neumorphism UI — v1
+   Namespace: neuui
+   --------------------------------------------------------------------------
+   Uso:
+     <div class="neuui neuui--alto">...</div>
+
+   Variantes disponibles (elige UNA por elemento):
+     • neuui--alto      → #e0e0e0 | radio 50px | sombras grandes, suave
+     • neuui--sutil     → #e0e0e0 | radio 20px | sombras cortas, discreto
+     • neuui--nocturno  → #2e2e2e | radio 15px | modo oscuro clásico
+     • neuui--claro     → #f0f0f0 | radio 8px  | cruzadas suaves
+     • neuui--pastilla  → #f5f5f5 | radio 100px| pill/oval suave
+     • neuui--grafito   → #4a4a4a | radio 25px | oscuro con contraste alto
+     • neuui--cielo     → #e0f7fa | radio 30px | tono frío/ligero
+     • neuui--pizarra   → #1f2937 | radio 12px | oscuro compacto
+ ========================================================================== */
+
+/* ---------- Base (no altera layout ni tipografía) ---------- */
+.neuui {
+  --neuui-bg: #e0e0e0;
+  --neuui-radius: 16px;
+  --neuui-shadow-1: 5px 5px 10px rgba(0, 0, 0, 0.06);
+  --neuui-shadow-2: -5px -5px 10px rgba(255, 255, 255, 0.5);
+
+  background: var(--neuui-bg);
+  border-radius: var(--neuui-radius);
+  box-shadow: var(--neuui-shadow-1), var(--neuui-shadow-2);
+}
+
+/* ---------- Variantes ---------- */
+
+
+.neuui--alto {
+  --neuui-bg: #e0e0e0;
+  --neuui-radius: 50px;
+  --neuui-shadow-1: 20px 20px 60px 0 rgba(255, 255, 255, 0.05);
+  --neuui-shadow-2: -20px -20px 60px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+.neuui--sutil {
+  --neuui-bg: #e0e0e0;
+  --neuui-radius: 20px;
+  --neuui-shadow-1: -5px -5px 10px 1px rgba(255, 255, 255, 0.025);
+  --neuui-shadow-2:  5px  5px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+.neuui--nocturno {
+  --neuui-bg: #2e2e2e;
+  --neuui-radius: 15px;
+  --neuui-shadow-1:  6px  6px 12px 1px rgba(255, 255, 255, 0.125);
+  --neuui-shadow-2: -6px -6px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+.neuui--claro {
+  --neuui-bg: #f0f0f0;
+  --neuui-radius: 8px;
+  --neuui-shadow-1: -10px 10px 20px 5px rgba(255, 255, 255, 0.04);
+  --neuui-shadow-2:  10px -10px 20px 5px rgba(0, 0, 0, 0.08);
+}
+
+.neuui--pastilla {
+  --neuui-bg: #f5f5f5;
+  --neuui-radius: 100px;
+  --neuui-shadow-1:  30px  30px 80px 10px rgba(255, 255, 255, 0.025);
+  --neuui-shadow-2: -30px -30px 80px 10px rgba(0, 0, 0, 0.05);
+}
+
+.neuui--grafito {
+  --neuui-bg: #4a4a4a;
+  --neuui-radius: 25px;
+  --neuui-shadow-1:  8px  8px 16px -2px rgba(255, 255, 255, 0.15);
+  --neuui-shadow-2: -8px -8px 16px -2px rgba(0, 0, 0, 0.30);
+}
+
+.neuui--cielo {
+  --neuui-bg: #e0f7fa;
+  --neuui-radius: 30px;
+  --neuui-shadow-1:  15px  15px 30px 0 rgba(255, 255, 255, 0.035);
+  --neuui-shadow-2: -15px -15px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.neuui--pizarra {
+  --neuui-bg: #1f2937;
+  --neuui-radius: 12px;
+  --neuui-shadow-1:  4px  4px 8px 1px rgba(255, 255, 255, 0.20);
+  --neuui-shadow-2: -4px -4px 8px 1px rgba(0, 0, 0, 0.40);
+}
+
+
