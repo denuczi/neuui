@@ -317,6 +317,7 @@
 .girar-80   { transform: rotate(80deg) translateZ(0); }
 .girar-85   { transform: rotate(85deg) translateZ(0); }
 .girar-90   { transform: rotate(90deg) translateZ(0); }
+.girar-mitad   { transform: rotate(90deg) translateZ(0); }
 .girar-95   { transform: rotate(95deg) translateZ(0); }
 .girar-100  { transform: rotate(100deg) translateZ(0); }
 .girar-105  { transform: rotate(105deg) translateZ(0); }
