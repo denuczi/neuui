@@ -90,4 +90,285 @@
   --neuui-shadow-2: -4px -4px 8px 1px rgba(0, 0, 0, 0.40);
 }
 
+/* ==========================================================================
+   Text Color Utilities — neuui.css
+   These utilities ONLY set text color. Nothing else.
+   Usage: <div class="neuui neuui--alto t-white">...</div>
+   ========================================================================== */
+
+/* ---- Grayscale ---- */
+.t-white       { color: #ffffff; }
+.t-black       { color: #000000; }
+.t-dark        { color: #0f172a; }
+.t-light       { color: #f8fafc; }
+.t-gray        { color: #94a3b8; }
+.t-muted       { color: #cbd5e1; }
+
+/* ---- Soft Pastels ---- */
+.t-rose        { color: #fda4af; }
+.t-blush       { color: #fecdd3; }
+.t-peach       { color: #fdba74; }
+.t-apricot     { color: #fb923c; }
+.t-cream       { color: #fef3c7; }
+.t-mint        { color: #a7f3d0; }
+.t-powderblue  { color: #bfdbfe; }
+.t-lilac       { color: #e9d5ff; }
+.t-lavender    { color: #c4b5fd; }
+
+/* ---- Vibrant Accents ---- */
+.t-red         { color: #ef4444; }
+.t-orange      { color: #fb923c; }
+.t-amber       { color: #f59e0b; }
+.t-yellow      { color: #facc15; }
+.t-green       { color: #22c55e; }
+.t-emerald     { color: #10b981; }
+.t-teal        { color: #14b8a6; }
+.t-cyan        { color: #06b6d4; }
+.t-blue        { color: #3b82f6; }
+.t-indigo      { color: #6366f1; }
+.t-violet      { color: #8b5cf6; }
+.t-purple      { color: #a855f7; }
+.t-magenta     { color: #ec4899; }
+
+/* ---- Luxury / Premium ---- */
+.t-gold        { color: #facc15; }
+.t-softgold    { color: #f7e8a4; }
+.t-platinum    { color: #e2e8f0; }
+.t-silver      { color: #94a3b8; }
+.t-ruby        { color: #e11d48; }
+.t-sapphire    { color: #2563eb; }
+.t-emeralddeep { color: #059669; }
+.t-royal       { color: #4338ca; }
+
+/* ---- Dark Mode Friendly Accents ---- */
+.t-neonblue    { color: #60a5fa; }
+.t-neonpink    { color: #f472b6; }
+.t-neongreen   { color: #4ade80; }
+.t-neonyellow  { color: #fde047; }
+.t-cyber       { color: #06d6a0; }
+.t-lime        { color: #84cc16; }
+
+/* ---- Earthy / Nature tones ---- */
+.t-sand        { color: #f5deb3; }
+.t-stone       { color: #78716c; }
+.t-forest      { color: #166534; }
+.t-olive       { color: #4d7c0f; }
+.t-terra       { color: #d97706; }
+.t-brown       { color: #92400e; }
+.t-clay        { color: #b45309; }
+
+/* ==========================================================================
+   Opacity Utilities (increments of 5)
+   Usage: <div class="neuui neuui--alto o-60">...</div>
+   ========================================================================= */
+
+.o-5   { opacity: 0.05; }
+.o-10  { opacity: 0.10; }
+.o-15  { opacity: 0.15; }
+.o-20  { opacity: 0.20; }
+.o-25  { opacity: 0.25; }
+.o-30  { opacity: 0.30; }
+.o-35  { opacity: 0.35; }
+.o-40  { opacity: 0.40; }
+.o-45  { opacity: 0.45; }
+.o-50  { opacity: 0.50; }
+.o-55  { opacity: 0.55; }
+.o-60  { opacity: 0.60; }
+.o-65  { opacity: 0.65; }
+.o-70  { opacity: 0.70; }
+.o-75  { opacity: 0.75; }
+.o-80  { opacity: 0.80; }
+.o-85  { opacity: 0.85; }
+.o-90  { opacity: 0.90; }
+.o-95  { opacity: 0.95; }
+.o-100 { opacity: 1; }
+
+/* ==========================================================================
+   Scale Utilities — increments of 2
+   Usage: <div class="neuui neuui--alto escala-80">...</div>
+   Notes: Values represent percentage scale (80 = scale(0.80))
+   ========================================================================== */
+
+.escala-2   { transform: scale(0.02) translateZ(0); }
+.escala-4   { transform: scale(0.04) translateZ(0); }
+.escala-6   { transform: scale(0.06) translateZ(0); }
+.escala-8   { transform: scale(0.08) translateZ(0); }
+.escala-10  { transform: scale(0.10) translateZ(0); }
+.escala-12  { transform: scale(0.12) translateZ(0); }
+.escala-14  { transform: scale(0.14) translateZ(0); }
+.escala-16  { transform: scale(0.16) translateZ(0); }
+.escala-18  { transform: scale(0.18) translateZ(0); }
+.escala-20  { transform: scale(0.20) translateZ(0); }
+.escala-22  { transform: scale(0.22) translateZ(0); }
+.escala-24  { transform: scale(0.24) translateZ(0); }
+.escala-26  { transform: scale(0.26) translateZ(0); }
+.escala-28  { transform: scale(0.28) translateZ(0); }
+.escala-30  { transform: scale(0.30) translateZ(0); }
+.escala-32  { transform: scale(0.32) translateZ(0); }
+.escala-34  { transform: scale(0.34) translateZ(0); }
+.escala-36  { transform: scale(0.36) translateZ(0); }
+.escala-38  { transform: scale(0.38) translateZ(0); }
+.escala-40  { transform: scale(0.40) translateZ(0); }
+.escala-42  { transform: scale(0.42) translateZ(0); }
+.escala-44  { transform: scale(0.44) translateZ(0); }
+.escala-46  { transform: scale(0.46) translateZ(0); }
+.escala-48  { transform: scale(0.48) translateZ(0); }
+.escala-50  { transform: scale(0.50) translateZ(0); }
+.escala-52  { transform: scale(0.52) translateZ(0); }
+.escala-54  { transform: scale(0.54) translateZ(0); }
+.escala-56  { transform: scale(0.56) translateZ(0); }
+.escala-58  { transform: scale(0.58) translateZ(0); }
+.escala-60  { transform: scale(0.60) translateZ(0); }
+.escala-62  { transform: scale(0.62) translateZ(0); }
+.escala-64  { transform: scale(0.64) translateZ(0); }
+.escala-66  { transform: scale(0.66) translateZ(0); }
+.escala-68  { transform: scale(0.68) translateZ(0); }
+.escala-70  { transform: scale(0.70) translateZ(0); }
+.escala-72  { transform: scale(0.72) translateZ(0); }
+.escala-74  { transform: scale(0.74) translateZ(0); }
+.escala-76  { transform: scale(0.76) translateZ(0); }
+.escala-78  { transform: scale(0.78) translateZ(0); }
+.escala-80  { transform: scale(0.80) translateZ(0); }
+.escala-82  { transform: scale(0.82) translateZ(0); }
+.escala-84  { transform: scale(0.84) translateZ(0); }
+.escala-86  { transform: scale(0.86) translateZ(0); }
+.escala-88  { transform: scale(0.88) translateZ(0); }
+.escala-90  { transform: scale(0.90) translateZ(0); }
+.escala-92  { transform: scale(0.92) translateZ(0); }
+.escala-94  { transform: scale(0.94) translateZ(0); }
+.escala-96  { transform: scale(0.96) translateZ(0); }
+.escala-98  { transform: scale(0.98) translateZ(0); }
+.escala-100 { transform: scale(1.00) translateZ(0); }
+.escala-102 { transform: scale(1.02) translateZ(0); }
+.escala-104 { transform: scale(1.04) translateZ(0); }
+.escala-106 { transform: scale(1.06) translateZ(0); }
+.escala-108 { transform: scale(1.08) translateZ(0); }
+.escala-110 { transform: scale(1.10) translateZ(0); }
+.escala-112 { transform: scale(1.12) translateZ(0); }
+.escala-114 { transform: scale(1.14) translateZ(0); }
+.escala-116 { transform: scale(1.16) translateZ(0); }
+.escala-118 { transform: scale(1.18) translateZ(0); }
+.escala-120 { transform: scale(1.20) translateZ(0); }
+.escala-122 { transform: scale(1.22) translateZ(0); }
+.escala-124 { transform: scale(1.24) translateZ(0); }
+.escala-126 { transform: scale(1.26) translateZ(0); }
+.escala-128 { transform: scale(1.28) translateZ(0); }
+.escala-130 { transform: scale(1.30) translateZ(0); }
+.escala-132 { transform: scale(1.32) translateZ(0); }
+.escala-134 { transform: scale(1.34) translateZ(0); }
+.escala-136 { transform: scale(1.36) translateZ(0); }
+.escala-138 { transform: scale(1.38) translateZ(0); }
+.escala-140 { transform: scale(1.40) translateZ(0); }
+.escala-142 { transform: scale(1.42) translateZ(0); }
+.escala-144 { transform: scale(1.44) translateZ(0); }
+.escala-146 { transform: scale(1.46) translateZ(0); }
+.escala-148 { transform: scale(1.48) translateZ(0); }
+.escala-150 { transform: scale(1.50) translateZ(0); }
+.escala-152 { transform: scale(1.52) translateZ(0); }
+.escala-154 { transform: scale(1.54) translateZ(0); }
+.escala-156 { transform: scale(1.56) translateZ(0); }
+.escala-158 { transform: scale(1.58) translateZ(0); }
+.escala-160 { transform: scale(1.60) translateZ(0); }
+.escala-162 { transform: scale(1.62) translateZ(0); }
+.escala-164 { transform: scale(1.64) translateZ(0); }
+.escala-166 { transform: scale(1.66) translateZ(0); }
+.escala-168 { transform: scale(1.68) translateZ(0); }
+.escala-170 { transform: scale(1.70) translateZ(0); }
+.escala-172 { transform: scale(1.72) translateZ(0); }
+.escala-174 { transform: scale(1.74) translateZ(0); }
+.escala-176 { transform: scale(1.76) translateZ(0); }
+.escala-178 { transform: scale(1.78) translateZ(0); }
+.escala-180 { transform: scale(1.80) translateZ(0); }
+.escala-182 { transform: scale(1.82) translateZ(0); }
+.escala-184 { transform: scale(1.84) translateZ(0); }
+.escala-186 { transform: scale(1.86) translateZ(0); }
+.escala-188 { transform: scale(1.88) translateZ(0); }
+.escala-190 { transform: scale(1.90) translateZ(0); }
+.escala-192 { transform: scale(1.92) translateZ(0); }
+.escala-194 { transform: scale(1.94) translateZ(0); }
+.escala-196 { transform: scale(1.96) translateZ(0); }
+.escala-198 { transform: scale(1.98) translateZ(0); }
+.escala-200 { transform: scale(2.00) translateZ(0); }
+
+/* ==========================================================================
+   Rotate Utilities — increments of 5 degrees
+   Usage: <div class="neuui neuui--alto girar-45">...</div>
+   Notes:
+     • girar-0   = no rotation (no included, you already have default state)
+     • girar-5   = rotate(5deg)
+     • girar-360 = full rotation
+   ========================================================================== */
+
+.girar-5    { transform: rotate(5deg) translateZ(0); }
+.girar-10   { transform: rotate(10deg) translateZ(0); }
+.girar-15   { transform: rotate(15deg) translateZ(0); }
+.girar-20   { transform: rotate(20deg) translateZ(0); }
+.girar-25   { transform: rotate(25deg) translateZ(0); }
+.girar-30   { transform: rotate(30deg) translateZ(0); }
+.girar-35   { transform: rotate(35deg) translateZ(0); }
+.girar-40   { transform: rotate(40deg) translateZ(0); }
+.girar-45   { transform: rotate(45deg) translateZ(0); }
+.girar-50   { transform: rotate(50deg) translateZ(0); }
+.girar-55   { transform: rotate(55deg) translateZ(0); }
+.girar-60   { transform: rotate(60deg) translateZ(0); }
+.girar-65   { transform: rotate(65deg) translateZ(0); }
+.girar-70   { transform: rotate(70deg) translateZ(0); }
+.girar-75   { transform: rotate(75deg) translateZ(0); }
+.girar-80   { transform: rotate(80deg) translateZ(0); }
+.girar-85   { transform: rotate(85deg) translateZ(0); }
+.girar-90   { transform: rotate(90deg) translateZ(0); }
+.girar-95   { transform: rotate(95deg) translateZ(0); }
+.girar-100  { transform: rotate(100deg) translateZ(0); }
+.girar-105  { transform: rotate(105deg) translateZ(0); }
+.girar-110  { transform: rotate(110deg) translateZ(0); }
+.girar-115  { transform: rotate(115deg) translateZ(0); }
+.girar-120  { transform: rotate(120deg) translateZ(0); }
+.girar-125  { transform: rotate(125deg) translateZ(0); }
+.girar-130  { transform: rotate(130deg) translateZ(0); }
+.girar-135  { transform: rotate(135deg) translateZ(0); }
+.girar-140  { transform: rotate(140deg) translateZ(0); }
+.girar-145  { transform: rotate(145deg) translateZ(0); }
+.girar-150  { transform: rotate(150deg) translateZ(0); }
+.girar-155  { transform: rotate(155deg) translateZ(0); }
+.girar-160  { transform: rotate(160deg) translateZ(0); }
+.girar-165  { transform: rotate(165deg) translateZ(0); }
+.girar-170  { transform: rotate(170deg) translateZ(0); }
+.girar-175  { transform: rotate(175deg) translateZ(0); }
+.girar-180  { transform: rotate(180deg) translateZ(0); }
+.girar-185  { transform: rotate(185deg) translateZ(0); }
+.girar-190  { transform: rotate(190deg) translateZ(0); }
+.girar-195  { transform: rotate(195deg) translateZ(0); }
+.girar-200  { transform: rotate(200deg) translateZ(0); }
+.girar-205  { transform: rotate(205deg) translateZ(0); }
+.girar-210  { transform: rotate(210deg) translateZ(0); }
+.girar-215  { transform: rotate(215deg) translateZ(0); }
+.girar-220  { transform: rotate(220deg) translateZ(0); }
+.girar-225  { transform: rotate(225deg) translateZ(0); }
+.girar-230  { transform: rotate(230deg) translateZ(0); }
+.girar-235  { transform: rotate(235deg) translateZ(0); }
+.girar-240  { transform: rotate(240deg) translateZ(0); }
+.girar-245  { transform: rotate(245deg) translateZ(0); }
+.girar-250  { transform: rotate(250deg) translateZ(0); }
+.girar-255  { transform: rotate(255deg) translateZ(0); }
+.girar-260  { transform: rotate(260deg) translateZ(0); }
+.girar-265  { transform: rotate(265deg) translateZ(0); }
+.girar-270  { transform: rotate(270deg) translateZ(0); }
+.girar-275  { transform: rotate(275deg) translateZ(0); }
+.girar-280  { transform: rotate(280deg) translateZ(0); }
+.girar-285  { transform: rotate(285deg) translateZ(0); }
+.girar-290  { transform: rotate(290deg) translateZ(0); }
+.girar-295  { transform: rotate(295deg) translateZ(0); }
+.girar-300  { transform: rotate(300deg) translateZ(0); }
+.girar-305  { transform: rotate(305deg) translateZ(0); }
+.girar-310  { transform: rotate(310deg) translateZ(0); }
+.girar-315  { transform: rotate(315deg) translateZ(0); }
+.girar-320  { transform: rotate(320deg) translateZ(0); }
+.girar-325  { transform: rotate(325deg) translateZ(0); }
+.girar-330  { transform: rotate(330deg) translateZ(0); }
+.girar-335  { transform: rotate(335deg) translateZ(0); }
+.girar-340  { transform: rotate(340deg) translateZ(0); }
+.girar-345  { transform: rotate(345deg) translateZ(0); }
+.girar-350  { transform: rotate(350deg) translateZ(0); }
+.girar-355  { transform: rotate(355deg) translateZ(0); }
+.girar-360  { transform: rotate(360deg) translateZ(0); }
 
