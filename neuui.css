@@ -16,7 +16,7 @@
      • neuui--pizarra   → #1f2937 | radio 12px | oscuro compacto
  ========================================================================== */
 
-/* ---------- Base (no altera layout ni tipografía) ---------- */
+
 .neuui {
   --neuui-bg: #e0e0e0;
   --neuui-radius: 16px;
@@ -27,8 +27,6 @@
   border-radius: var(--neuui-radius);
   box-shadow: var(--neuui-shadow-1), var(--neuui-shadow-2);
 }
-
-/* ---------- Variantes ---------- */
 
 
 .neuui--alto {
