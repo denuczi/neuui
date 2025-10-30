@@ -3,24 +3,26 @@
 A lightweight collection of CSS utilities for modern UI surface aesthetics.  
 This repository provides two styling layers:
 
-- `neuui.css` — Neumorphism utilities (global stylesheet, fully namespaced).
-- `glassmorphism.module.css` — Glassmorphism utilities (CSS Module, locally scoped).
+- **`neuui.css`** — Neumorphism utilities (global stylesheet, fully namespaced).
+- **`glassmorphism.module.css`** — Glassmorphism utilities (CSS Module, locally scoped).
 
 Both stylesheets are **layout-safe**: they do not modify padding, margin, layout flow, font properties, or text color.  
 Their purpose is strictly visual—backgrounds, radii, borders, shadows, and reflective overlays.
 
+---
+
 
 ## Overview
 
-- Non-intrusive: No resets or global overrides.
-- Safe for any project: No effect on spacing, layout, or content styling.
-- Portable: Works with static HTML, PHP, React, Vite, Next.js, etc.
-- Customizable: All key visual parameters use CSS variables.
-- Collision-free:
+- **Non-intrusive**: No resets or global overrides.
+- **Safe for any project**: No effect on spacing, layout, or content styling.
+- **Portable**: Works with static HTML, PHP, React, Vite, Next.js, etc.
+- **Customizable**: All key visual parameters use CSS variables.
+- **Collision-free**:
   - `neuui.css` uses the `.neuui` namespace.
   - `glassmorphism.module.css` is module-scoped.
 
-
+---
 
 ## Files
 
@@ -29,36 +31,36 @@ Their purpose is strictly visual—backgrounds, radii, borders, shadows, and ref
 
 Repository: **https://github.com/denuczi/neuui/**
 
-
+---
 
 ## Installation
 
 ### Direct use
 Download or clone the repository, then include:
 
-html
+```html
 <link rel="stylesheet" href="neuui.css">
-
+````
 
 For the glassmorphism module (CSS Module):
 
-ts
+```ts
 import styles from "./glassmorphism.module.css";
-
+```
 
 ### Using a bundler
 
 Place the files anywhere in your project and import:
 
-.ts
-For global Neumorphism
+```ts
+// For global Neumorphism
 import "./neuui.css";
+```
 
-
-.ts
+```ts
 // For component-level Glassmorphism
 import styles from "./glassmorphism.module.css";
-
+```
 
 ---
 
@@ -66,19 +68,19 @@ import styles from "./glassmorphism.module.css";
 
 ### Neumorphism (global CSS)
 
-html
+```html
 <div class="neuui neuui--alto" style="width:240px;height:140px;">
   …
 </div>
-
+```
 
 ### Glassmorphism (CSS Module)
 
-tsx
+```tsx
 <div className={`${styles.glass} ${styles.solaris}`} style={{ width: 300, height: 160 }}>
   …
 </div>
-
+```
 
 ---
 
@@ -88,37 +90,40 @@ A pure-CSS neumorphic system built around a single base class and several ready-
 
 ### Base class
 
-html
+```html
 <div class="neuui"></div>
-
+```
 
 Variants extend the base:
 
+```html
 <div class="neuui neuui--sutil"></div>
-
+```
 
 ---
 
 ## Variants
 
-| Class           | Description                                    |
-| ----------------| ---------------------------------------------- |
-| neuui--alto     | Large radius, soft deep shadows, light surface |
-| neuui--sutil    | Compact shadows, subtle appearance             |
-| neuui--nocturno | Dark mode neumorphism with high contrast       |
-| neuui--claro    | Light surface with crossed shadows             |
-| neuui--pastilla | Pill-style rounded shape                       |
-| neuui--grafito  | Dark graphite surface with strong contrast     |
-| neuui--cielo    | Cool cyan-tinted soft surface                  |
-| neuui--pizarra  | Slate-style compact dark surface               |
+| Class             | Description                                    |
+| ----------------- | ---------------------------------------------- |
+| `neuui--alto`     | Large radius, soft deep shadows, light surface |
+| `neuui--sutil`    | Compact shadows, subtle appearance             |
+| `neuui--nocturno` | Dark mode neumorphism with high contrast       |
+| `neuui--claro`    | Light surface with crossed shadows             |
+| `neuui--pastilla` | Pill-style rounded shape                       |
+| `neuui--grafito`  | Dark graphite surface with strong contrast     |
+| `neuui--cielo`    | Cool cyan-tinted soft surface                  |
+| `neuui--pizarra`  | Slate-style compact dark surface               |
 
 ---
 
 ## Examples
 
+```html
 <div class="neuui neuui--grafito" style="width:200px;height:120px;"></div>
 <div class="neuui neuui--pastilla" style="width:260px;height:80px;"></div>
 <div class="neuui neuui--claro" style="width:220px;height:160px;"></div>
+```
 
 ---
 
@@ -126,6 +131,7 @@ Variants extend the base:
 
 Override variables on the element:
 
+```html
 <div
   class="neuui neuui--sutil"
   style="
@@ -135,6 +141,7 @@ Override variables on the element:
     --neuui-shadow-2: -6px -6px 14px rgba(255,255,255,.45);
   "
 ></div>
+```
 
 ---
 
@@ -145,31 +152,33 @@ Uses backdrop blur, saturation, translucent backgrounds, and two overlay gradien
 
 ### Usage
 
-tsx
+```tsx
 import styles from "./glassmorphism.module.css";
 
 <div className={`${styles.glass} ${styles.cosmic}`}>
   …
 </div>
+```
 
 ---
 
 ## Variants
 
-| Class    | Description                                         |
-| ---------| --------------------------------------------------- |
-| amethyst | Heavy blur, low saturation, thick border, deep glow |
-| solaris  | Medium blur, warm/neutral tone, balanced shadowing  |
-| cosmic   | Light blur, warm tint, subtle inner glow            |
+| Class      | Description                                         |
+| ---------- | --------------------------------------------------- |
+| `amethyst` | Heavy blur, low saturation, thick border, deep glow |
+| `solaris`  | Medium blur, warm/neutral tone, balanced shadowing  |
+| `cosmic`   | Light blur, warm tint, subtle inner glow            |
 
 ---
 
 ## Examples
 
-tsx
+```tsx
 <div className={`${styles.glass} ${styles.amethyst}`} style={{ height: 200 }} />
 <div className={`${styles.glass} ${styles.solaris}`} style={{ width: 260, height: 140 }} />
 <div className={`${styles.glass} ${styles.cosmic}`} style={{ borderRadius: 20 }} />
+```
 
 ---
 
@@ -177,7 +186,7 @@ tsx
 
 CSS variables may be overridden inline:
 
-tsx
+```tsx
 <div
   className={`${styles.glass} ${styles.solaris}`}
   style={{
@@ -189,9 +198,17 @@ tsx
 >
   …
 </div>
+```
 
 ---
 
+## Accessibility
+
+* Effects are purely decorative.
+* If adding animations, consider `prefers-reduced-motion`.
+* Shadows and glass transparency do not interfere with screen readers.
+
+---
 
 ## Performance
 
@@ -200,3 +217,18 @@ tsx
 
   * Keep surfaces moderate in size.
   * Avoid animating blur or saturation.
+
+---
+
+## Browser Support
+
+| Feature         | Support                                    |
+| --------------- | ------------------------------------------ |
+| Neumorphism     | Fully supported (standard CSS shadows)     |
+| Backdrop-filter | Chromium, Safari, and modern browsers      |
+| CSS Modules     | Depends on bundler (Vite, Next, CRA, etc.) |
+
+Provide fallbacks for older browsers if needed.
+
+
+```
